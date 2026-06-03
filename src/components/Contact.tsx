@@ -80,7 +80,7 @@ export default function Contact() {
         </div>
         <div className="rounded-3xl overflow-hidden shadow-card border border-border/40 min-h-[360px]">
           <iframe
-            title="Lokasi Herbalita"
+            title="Lokasi SESEGERitu"
             src="https://maps.google.com/maps?q=Sesegeritu+Produsen+Minuman+Sehat+Serang=UTF8&iwloc=&output=embed"
             className="w-full h-full min-h-[360px] border-0"
             loading="lazy"

@@ -54,7 +54,7 @@ export default function Hero() {
           <div className="absolute -inset-6 rounded-[2.5rem] blur-3xl opacity-40 bg-gradient-hero"></div>
           <Image
             src="/assets/hero.webp"
-            alt="Botol minuman herbal Herbalita dengan jahe, kunyit, dan lemon"
+            alt="Botol minuman herbal SESEGERitu dengan jahe, kunyit, dan lemon"
             className="relative rounded-4xl shadow-soft w-full h-auto object-cover aspect-square"
             width={400}
             height={400}

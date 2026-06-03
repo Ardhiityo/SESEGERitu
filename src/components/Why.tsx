@@ -8,7 +8,7 @@ export default function Why() {
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="text-center max-w-2xl mx-auto">
           <p className="text-sm font-semibold uppercase tracking-widest text-accent">
-            Mengapa Herbalita
+            Mengapa SESEGERitu
           </p>
           <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold">
             Lebih dari sekadar minuman.

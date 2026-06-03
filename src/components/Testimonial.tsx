@@ -33,7 +33,7 @@ export default function Testimonial() {
               <div>
                 <div className="font-semibold text-sm">Anisa Pramudita</div>
                 <div className="text-xs text-muted-foreground">
-                  Pelanggan Herbalita
+                  Pelanggan SESEGERitu
                 </div>
               </div>
             </figcaption>
@@ -56,7 +56,7 @@ export default function Testimonial() {
               <div>
                 <div className="font-semibold text-sm">Rizky Ananda</div>
                 <div className="text-xs text-muted-foreground">
-                  Pelanggan Herbalita
+                  Pelanggan SESEGERitu
                 </div>
               </div>
             </figcaption>
@@ -79,7 +79,7 @@ export default function Testimonial() {
               <div>
                 <div className="font-semibold text-sm">Maya Kusuma</div>
                 <div className="text-xs text-muted-foreground">
-                  Pelanggan Herbalita
+                  Pelanggan SESEGERitu
                 </div>
               </div>
             </figcaption>
