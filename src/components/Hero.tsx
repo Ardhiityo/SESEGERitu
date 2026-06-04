@@ -55,9 +55,9 @@ export default function Hero() {
           <Image
             src="/assets/hero.webp"
             alt="Botol minuman herbal SESEGERitu dengan jahe, kunyit, dan lemon"
-            className="relative rounded-4xl shadow-soft w-full h-auto object-cover aspect-square"
-            width={400}
-            height={400}
+            className="relative rounded-4xl shadow-soft w-full object-cover h-auto aspect-square"
+            width={1280}
+            height={854}
           />
         </div>
       </div>
