@@ -3,6 +3,7 @@ import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.sesegeritu.tridayasembadaind.com"),
   title: "SESEGERitu | Minuman Herbal",
   description:
     "Minuman herbal segar dari bunga telang, bunga rosella yang dipadukan dengan berbagai rempah pilihan dan menggunakan gula singkong sebagai pemanis alami yang rendah kalori.",
@@ -13,7 +14,14 @@ export const metadata: Metadata = {
     description:
       "Minuman herbal segar dari bunga telang, bunga rosella yang dipadukan dengan berbagai rempah pilihan dan menggunakan gula singkong sebagai pemanis alami yang rendah kalori.",
     siteName: "SESEGERitu",
-    images: [{ url: "/assets/brand.webp" }],
+    images: [
+      {
+        url: "/assets/brand.webp",
+        width: 1200,
+        height: 630,
+        alt: "SESEGERitu Minuman Herbal",
+      },
+    ],
   },
 };
 
