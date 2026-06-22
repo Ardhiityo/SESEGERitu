@@ -50,13 +50,13 @@ export default function Product() {
       benefit: "Memperlancar Pencernaan",
       price: "15.000",
     },
-    // {
-    //   image: "/assets/chocolatte.webp",
-    //   title: "Coconut Water",
-    //   description: "Air kelapa murni 100% Tanpa Pemanis Tambahan.",
-    //   benefit: "Mengembalikan Ion yang hilang",
-    //   price: "15.000",
-    // },
+    {
+      image: "/assets/coconut.webp",
+      title: "Coconut Water",
+      description: "Air kelapa murni 100% Tanpa Pemanis Tambahan.",
+      benefit: "Mengembalikan Ion yang hilang",
+      price: "15.000",
+    },
     {
       image: "/assets/matchalatte.webp",
       title: "Seggerlatte Matchalatte",
@@ -71,13 +71,13 @@ export default function Product() {
       benefit: "Meningkatkan Moodbooster",
       price: "15.000",
     },
-    // {
-    //   image: "/assets/chocolatte.webp",
-    //   title: "Seggerlatte Cafee Latte",
-    //   description: "Perpaduan Kopi & Healthy Creamer Gula Singkong.",
-    //   benefit: "Meningkatkan Moodbooster",
-    //   price: "15.000",
-    // },
+    {
+      image: "/assets/coffee-latte.webp",
+      title: "Seggerlatte Coffee Latte",
+      description: "Perpaduan Kopi & Healthy Creamer Gula Singkong.",
+      benefit: "Meningkatkan Moodbooster",
+      price: "15.000",
+    },
     {
       image: "/assets/blue-latte.webp",
       title: "Seggerlatte Blue Latte",

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     "Minuman herbal segar dari bunga telang, bunga rosella yang dipadukan dengan berbagai rempah pilihan dan menggunakan gula singkong sebagai pemanis alami yang rendah kalori.",
   openGraph: {
     type: "website",
-    url: "https://sesegeritu.my.id",
+    url: "https://www.sesegeritu.tridayasembadaind.com/",
     title: "SESEGERitu | Minuman Herbal",
     description:
       "Minuman herbal segar dari bunga telang, bunga rosella yang dipadukan dengan berbagai rempah pilihan dan menggunakan gula singkong sebagai pemanis alami yang rendah kalori.",

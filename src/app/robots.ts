@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: "https://sesegeritu.my.id/sitemap.xml",
+    sitemap: "https://www.sesegeritu.tridayasembadaind.com/sitemap.xml",
   };
 }
