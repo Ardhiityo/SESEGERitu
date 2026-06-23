@@ -23,7 +23,7 @@ export default function Product() {
     {
       image: "/assets/tropical-purple.webp",
       title: "Tropical Purple",
-      description: "Ekstrak Telang Lemon Serai",
+      description: "Ekstrak Telang Lemon Serai.",
       benefit: "Meningkatkan Kekebalan Tubuh",
       price: "15.000",
     },
@@ -79,7 +79,7 @@ export default function Product() {
     {
       image: "/assets/blue-latte.webp",
       title: "Seggerlatte Blue Latte",
-      description: "Perpaduan Bunga Telang & Gula Singkong",
+      description: "Perpaduan Bunga Telang & Gula Singkong.",
       benefit: "Meningkatkan Moodbooster",
       price: "15.000",
     },
