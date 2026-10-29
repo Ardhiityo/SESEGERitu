@@ -1,41 +1,26 @@
 import type { Metadata } from "next";
-import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.sesegeritu.tridayasembadaind.com"),
-  title: "SESEGERitu | Minuman Herbal",
-  description:
-    "Minuman herbal segar dari bunga telang, bunga rosella yang dipadukan dengan berbagai rempah pilihan dan menggunakan gula singkong sebagai pemanis alami yang rendah kalori.",
+  title: "Herbal Rosa",
+  description: "Indonesian herbal infusion products inspired by botanical traditions.",
   openGraph: {
     type: "website",
     url: "https://www.sesegeritu.tridayasembadaind.com/",
-    title: "SESEGERitu | Minuman Herbal",
-    description:
-      "Minuman herbal segar dari bunga telang, bunga rosella yang dipadukan dengan berbagai rempah pilihan dan menggunakan gula singkong sebagai pemanis alami yang rendah kalori.",
-    siteName: "SESEGERitu",
+    title: "Herbal Rosa",
+    description: "Indonesian herbal infusion products inspired by botanical traditions.",
+    siteName: "Herbal Rosa",
     images: [
       {
         url: "/assets/brand.webp",
         width: 1200,
         height: 630,
-        alt: "SESEGERitu Minuman Herbal",
+        alt: "Herbal Rosa Indonesian Herbal Infusion",
       },
     ],
   },
 };
-
-const fraunces = Fraunces({
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  variable: "--font-fraunces",
-});
-
-const plusJakartaSans = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-plus-jakarta-sans",
-});
 
 export default function RootLayout({
   children,
@@ -43,10 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`h-full antialiased ${fraunces.variable} ${plusJakartaSans.variable}`}
-    >
+    <html lang="en" className="h-full antialiased">
       <body suppressHydrationWarning={true} className="min-h-screen">
         {children}
       </body>

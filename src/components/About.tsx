@@ -1,76 +1,65 @@
-"use client";
 
 export default function About() {
   return (
-    <section id="about" className="py-24">
-      <div className="mx-auto max-w-7xl px-5 sm:px-8 grid md:grid-cols-2 gap-14 items-center">
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-widest text-accent">
-            Tentang Kami
+    <section
+      id="about"
+      className="relative overflow-hidden bg-[#173d2b] px-5 py-20 sm:px-8 sm:py-24 lg:px-12 lg:py-28"
+    >
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-[#315b40]/30 blur-3xl"
+      />
+
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -bottom-32 -left-20 h-80 w-80 rounded-full bg-[#78916a]/15 blur-3xl"
+      />
+
+      <div className="relative mx-auto max-w-5xl text-center">
+        <div className="mb-6 flex items-center justify-center gap-3">
+          <span className="h-px w-9 bg-[#d7bd83]" />
+
+          <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#e5cc98]">
+            About Herbal Rosa
           </p>
-          <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold">
-            Warisan rempah, dikemas modern.
-          </h2>
-          <p className="mt-5 text-muted-foreground leading-relaxed">
-            <strong>SESEGERitu</strong> lahir di Banten dari dapur kecil
-            keluarga kami yang sudah turun-temurun meracik produk herbal. Kami
-            percaya kebaikan herbal Indonesia layak hadir dalam kemasan praktis
-            tanpa kehilangan kemurniannya.
-          </p>
-          <div className="mt-8 grid sm:grid-cols-2 gap-4">
-            <div className="rounded-2xl bg-card p-6 shadow-card border border-border/40">
-              <h3 className="font-display text-xl font-semibold text-primary">
-                Visi
-              </h3>
-              <p className="mt-2 text-sm text-muted-foreground">
-                Menjadikan minuman herbal pilihan utama gaya hidup sehat
-                keluarga Indonesia.
-              </p>
-            </div>
-            <div className="rounded-2xl bg-card p-6 shadow-card border border-border/40">
-              <h3 className="font-display text-xl font-semibold text-primary">
-                Misi
-              </h3>
-              <p className="mt-2 text-sm text-muted-foreground">
-                Meracik produk berkualitas dari petani lokal dengan proses
-                higienis dan berkelanjutan.
-              </p>
-            </div>
-          </div>
+
+          <span className="h-px w-9 bg-[#d7bd83]" />
         </div>
-        <div className="grid grid-cols-2 gap-4">
-          <div className="rounded-2xl p-6 text-center bg-gradient-soft">
-            <div className="font-display text-4xl font-bold text-primary">
-              12K+
-            </div>
-            <div className="mt-1 text-sm text-muted-foreground">
-              Pelanggan Setia
-            </div>
-          </div>
-          <div className="rounded-2xl p-6 text-center bg-gradient-soft">
-            <div className="font-display text-4xl font-bold text-primary">
-              30+
-            </div>
-            <div className="mt-1 text-sm text-muted-foreground">
-              Mitra Petani
-            </div>
-          </div>
-          <div className="rounded-2xl p-6 text-center bg-gradient-soft">
-            <div className="font-display text-4xl font-bold text-primary">
-              4.9
-            </div>
-            <div className="mt-1 text-sm text-muted-foreground">
-              Rating Pelanggan
-            </div>
-          </div>
-          <div className="rounded-2xl p-6 text-center bg-gradient-soft">
-            <div className="font-display text-4xl font-bold text-primary">
-              24 Jam
-            </div>
-            <div className="mt-1 text-sm text-muted-foreground">
-              Diolah Segar
-            </div>
-          </div>
+
+        <h2 className="font-serif text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-7xl">
+          Indonesian Herbal Heritage,
+          <span className="mt-2 block text-[#d9e2c8]">
+            Inspired by Nature.
+          </span>
+        </h2>
+
+        <div className="mx-auto mt-8 max-w-3xl space-y-5 text-base leading-8 text-white/80 sm:mt-10 sm:text-lg">
+          <p>
+            <strong className="font-semibold text-white">
+              Herbal Rosa
+            </strong>{" "}
+            draws inspiration from Indonesia&apos;s rich botanical heritage
+            and traditional herbal culture. We aim to share distinctive
+            Indonesian herbal flavors through convenient products designed
+            for modern lifestyles.
+          </p>
+
+          <p>
+            We believe Indonesia&apos;s local ingredients have a story worth
+            sharing with the world. Through Herbal Rosa, we aspire to connect
+            the richness of Indonesian herbal traditions with customers and
+            business partners in international markets.
+          </p>
+        </div>
+
+        <div className="mt-9 flex justify-center sm:mt-10">
+          <a
+            href="#products"
+            className="inline-flex items-center justify-center gap-3 rounded-full bg-[#e1c991] px-8 py-4 text-sm font-bold text-[#173d2b] transition duration-300 hover:bg-white"
+          >
+            Explore Our Products
+            <span aria-hidden="true">→</span>
+          </a>
         </div>
       </div>
     </section>
