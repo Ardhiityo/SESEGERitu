@@ -5,6 +5,7 @@ export default function About() {
       id="about"
       className="relative overflow-hidden bg-[#173d2b] px-5 py-20 sm:px-8 sm:py-24 lg:px-12 lg:py-28"
     >
+      {/* Background decoration */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-[#315b40]/30 blur-3xl"
@@ -20,7 +21,7 @@ export default function About() {
           <span className="h-px w-9 bg-[#d7bd83]" />
 
           <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#e5cc98]">
-            About Herbal Rosa
+            About HERBAROSA
           </p>
 
           <span className="h-px w-9 bg-[#d7bd83]" />
@@ -36,19 +37,20 @@ export default function About() {
         <div className="mx-auto mt-8 max-w-3xl space-y-5 text-base leading-8 text-white/80 sm:mt-10 sm:text-lg">
           <p>
             <strong className="font-semibold text-white">
-              Herbal Rosa
+              HERBAROSA
             </strong>{" "}
-            draws inspiration from Indonesia&apos;s rich botanical heritage
-            and traditional herbal culture. We aim to share distinctive
-            Indonesian herbal flavors through convenient products designed
-            for modern lifestyles.
+            is an Indonesian herbal infusion brand inspired by the
+            country&apos;s rich botanical heritage and traditional
+            ingredients. We bring distinctive Indonesian herbal flavors
+            into convenient products designed for modern lifestyles.
           </p>
 
           <p>
-            We believe Indonesia&apos;s local ingredients have a story worth
-            sharing with the world. Through Herbal Rosa, we aspire to connect
-            the richness of Indonesian herbal traditions with customers and
-            business partners in international markets.
+            Rooted in Indonesia, HERBAROSA is committed to introducing
+            local botanical ingredients to a wider global audience.
+            We welcome opportunities to connect with international
+            importers, distributors, and business partners to build
+            lasting collaborations.
           </p>
         </div>
 

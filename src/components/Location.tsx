@@ -5,6 +5,9 @@ export default function Location() {
   const address =
     "Jalan Raya Taktakan, Komplek Makmur Jaya, Gg. Edelwis No. 34 Rt/Rw 002, 009, Drangong, Kec. Taktakan, Kota Serang, Banten 42148, Indonesia";
 
+  const whatsappUrl =
+    "https://wa.me/6289521220642?text=Hello%20HERBAROSA%2C%20I%20am%20interested%20in%20your%20products%20and%20export%20partnerships.";
+
   const mapEmbedUrl =
     "https://maps.google.com/maps?q=Sesegeritu%20Produsen%20Minuman%20Sehat%20Serang%2C%20Jalan%20Raya%20Taktakan%2C%20Kota%20Serang%2C%20Banten&t=&z=15&ie=UTF8&iwloc=&output=embed";
 
@@ -125,6 +128,21 @@ export default function Location() {
                   Contact our team for product information, wholesale orders,
                   and export partnerships.
                 </p>
+
+                <div className="mt-3 text-sm leading-6 text-[#46554b]">
+                  <p className="font-semibold text-[#173d2b]">
+                    Contact Person
+                  </p>
+
+                  <a
+                    href={whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1 inline-flex items-center gap-2 font-semibold text-[#17633d] underline underline-offset-4 transition hover:text-[#b52d40]"
+                  >
+                    +62 895-2122-0642 (WhatsApp)
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -134,7 +152,7 @@ export default function Location() {
         <div className="min-w-0 overflow-hidden rounded-3xl border border-[#e7ddc9] bg-white shadow-lg">
           <div className="relative h-[320px] sm:h-[390px] lg:h-[430px]">
             <iframe
-              title="Sesegeritu Produsen Minuman Sehat Serang map"
+              title="HERBAROSA location map in Serang, Banten"
               src={mapEmbedUrl}
               width="100%"
               height="100%"
@@ -148,7 +166,7 @@ export default function Location() {
           <div className="flex items-center justify-between gap-4 p-5">
             <div className="min-w-0">
               <h3 className="font-semibold text-[#173d2b]">
-                Herbal Rosa
+                HERBAROSA
               </h3>
 
               <p className="mt-1 text-sm text-gray-500">

@@ -1,3 +1,4 @@
+
 "use client";
 
 import { MessageCircle } from "lucide-react";
@@ -7,33 +8,35 @@ const products = [
     name: "Ginger Glow",
     image: "/assets/ginger glow.webp",
     description:
-      "A warming herbal blend featuring ginger and selected spices, crafted for a distinctive and comforting taste.",
+      "A warming herbal infusion featuring ginger and selected spices, inspired by Indonesia's rich botanical traditions.",
     color: "bg-[#E8EBDD]",
   },
   {
     name: "Golden Tamarind",
     image: "/assets/golden tamarind.webp",
     description:
-      "A distinctive blend of tamarind and selected spices, offering a unique flavor inspired by Indonesian herbal traditions.",
+      "A distinctive herbal infusion combining tamarind and selected spices for a memorable Indonesian-inspired flavor.",
     color: "bg-[#F5E7C5]",
   },
   {
     name: "Ruby Blow",
     image: "/assets/ruby blow.webp",
     description:
-      "A botanical-inspired herbal blend with a vibrant ruby-red character and a distinctive flavor profile.",
+      "A botanical-inspired infusion featuring hibiscus, red ginger, and lemongrass with a vibrant ruby-red character.",
     color: "bg-[#F1DEDC]",
   },
   {
     name: "Tropical Blue",
     image: "/assets/tropical blue.webp",
     description:
-      "A tropical-inspired herbal blend with a striking blue presentation, created for a unique beverage experience.",
+      "A unique herbal infusion inspired by tropical botanicals, featuring butterfly pea, ginger, and lemongrass.",
     color: "bg-[#DDE8F4]",
   },
 ];
 
 export default function Products() {
+  const whatsappNumber = "6289521220642";
+
   return (
     <section
       id="products"
@@ -43,7 +46,7 @@ export default function Products() {
         <div className="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div className="max-w-2xl">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#A82D3B]">
-              Discover Herbal Rosa
+              Discover HERBAROSA
             </p>
 
             <h2 className="text-4xl font-bold leading-tight text-[#173D2D] md:text-5xl">
@@ -52,8 +55,9 @@ export default function Products() {
           </div>
 
           <p className="max-w-md text-base leading-7 text-[#5F665D]">
-            Discover distinctive herbal blends inspired by Indonesia&apos;s
-            botanical traditions and crafted for a memorable beverage experience.
+            Discover distinctive herbal infusions inspired by
+            Indonesia&apos;s botanical traditions and crafted
+            for a memorable beverage experience.
           </p>
         </div>
 
@@ -68,7 +72,7 @@ export default function Products() {
               >
                 <img
                   src={product.image}
-                  alt={`${product.name} herbal beverage packaging`}
+                  alt={`${product.name} HERBAROSA herbal infusion packaging`}
                   className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                 />
               </div>
@@ -83,8 +87,8 @@ export default function Products() {
                 </p>
 
                 <a
-                  href={`https://wa.me/62NOMORWHATSAPP?text=${encodeURIComponent(
-                    `Hello Herbal Rosa, I would like to learn more about ${product.name}, including product specifications, pricing, and bulk order options.`
+                  href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+                    `Hello HERBAROSA Team, I would like to learn more about ${product.name}, including product specifications, pricing, and bulk order options.`
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -100,12 +104,13 @@ export default function Products() {
 
         <div className="mt-12 rounded-2xl bg-[#173D2D] px-6 py-8 text-center md:px-10">
           <h3 className="mb-3 text-2xl font-bold text-[#FBF7ED]">
-            Interested in Our Products?
+            Interested in HERBAROSA Products?
           </h3>
 
           <p className="mx-auto mb-6 max-w-2xl leading-7 text-[#E5E9DE]">
-            Contact our team to request product information, discuss bulk
-            orders, or explore potential business and export partnerships.
+            Contact our team to request product information,
+            discuss bulk orders, or explore potential
+            international distribution and export partnerships.
           </p>
 
           <a

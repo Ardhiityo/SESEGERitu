@@ -25,7 +25,7 @@ export default function Hero() {
           </h1>
 
           <p className="mb-8 max-w-xl text-base leading-8 text-[#5F665D] md:text-lg">
-            Herbal Rosa brings together herbal beverage blends inspired by
+            Herbarosa brings together herbal beverage blends inspired by
             Indonesia&apos;s rich botanical heritage. Discover distinctive
             flavors crafted around selected herbs and spices for a unique
             drinking experience.

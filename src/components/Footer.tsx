@@ -22,13 +22,14 @@ export default function Footer() {
             className="inline-flex items-center gap-2 text-xl font-bold"
           >
             <Leaf className="h-7 w-7 text-[#D6B66D]" />
-            <span>Herbal Rosa</span>
+            <span>HERBAROSA</span>
           </Link>
 
           <p className="mt-5 max-w-xs text-sm leading-7 text-[#FBF7ED]/75">
-            Discover Indonesian-inspired herbal products
-            and connect with us to explore opportunities
-            for a greener, more connected world.
+            Discover Indonesian herbal infusions inspired by
+            local botanical heritage. We welcome opportunities
+            to connect with importers, distributors, and
+            international business partners.
           </p>
 
           <p className="mt-5 text-xs font-medium uppercase tracking-[0.16em] text-[#D6B66D]">
@@ -59,7 +60,7 @@ export default function Footer() {
             </li>
             <li>
               <Link href="#why" className="transition hover:text-white">
-                Why Herbal Rosa
+                Why HERBAROSA
               </Link>
             </li>
             <li>
@@ -125,14 +126,14 @@ export default function Footer() {
           </ul>
 
           <p className="mt-5 text-sm leading-6 text-[#FBF7ED]/75">
-            Interested in bulk orders or export partnerships?
-            Get in touch with our team.
+            Interested in wholesale inquiries or export
+            partnerships? Get in touch with our team.
           </p>
         </div>
       </div>
 
       <div className="border-t border-white/15 px-5 py-6 text-center text-xs text-[#FBF7ED]/60">
-        © {new Date().getFullYear()} Herbal Rosa.
+        © {new Date().getFullYear()} HERBAROSA.
         All rights reserved.
       </div>
     </footer>

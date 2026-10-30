@@ -1,4 +1,3 @@
-
 import { Star, Quote, MapPin } from "lucide-react";
 
 const testimonials = [
@@ -29,7 +28,7 @@ const testimonials = [
     rating: 5,
     product: "Ruby Blow",
     review:
-      "I find the idea of exploring Indonesian botanical inspiration appealing. The variety of products makes Herbal Rosa an interesting brand to discover.",
+      "I find the idea of exploring Indonesian botanical inspiration appealing. The variety of products makes HERBAROSA an interesting brand to discover.",
     initial: "S",
   },
 ];
@@ -51,7 +50,7 @@ export default function Testimonial() {
           </h2>
 
           <p className="mt-5 text-base leading-relaxed text-[#526456]">
-            Discover the Herbal Rosa collection and explore
+            Discover the HERBAROSA collection and explore
             Indonesian-inspired herbal products.
           </p>
         </div>
@@ -111,8 +110,6 @@ export default function Testimonial() {
             </figure>
           ))}
         </div>
-
-       
       </div>
     </section>
   );

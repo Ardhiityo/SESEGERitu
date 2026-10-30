@@ -9,7 +9,7 @@ const navLinks = [
   { label: "Home", href: "#hero" },
   { label: "About", href: "#about" },
   { label: "Products", href: "#products" },
-  { label: "Why Herbal Rosa", href: "#why" },
+  { label: "Why HERBAROSA", href: "#why" },
   { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#kontak" },
 ];
@@ -24,12 +24,12 @@ export default function Navbar() {
         <a
           href="#hero"
           className="flex shrink-0 items-center gap-3"
-          aria-label="Herbal Rosa home"
+          aria-label="HERBAROSA home"
           onClick={() => setMenuOpen(false)}
         >
           <Image
   src="/assets/herbal-rosa-emblem.png"
-  alt="Herbal Rosa HR emblem"
+  alt="HERBAROSA HR emblem"
   width={52}
   height={52}
   priority
@@ -37,7 +37,7 @@ export default function Navbar() {
 />
 
           <span className="font-serif text-2xl font-bold tracking-tight text-[#173d2b] sm:text-3xl">
-            Herbal Rosa
+            HERBAROSA
           </span>
         </a>
 

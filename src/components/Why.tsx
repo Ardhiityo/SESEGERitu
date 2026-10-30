@@ -12,27 +12,27 @@ export default function Why() {
   const reasons = [
     {
       icon: ShieldCheck,
-      title: "Halal Certification",
+      title: "Certification & Quality",
       description:
-        "Halal certification information can be provided to buyers upon confirmation of certification status.",
+        "Product certification and quality documentation can be discussed and provided based on the available certification status.",
     },
     {
       icon: Leaf,
-      title: "Indonesian Herbal Inspiration",
+      title: "Indonesian Botanical Heritage",
       description:
-        "Discover four Herbal Rosa varieties inspired by Indonesian botanicals: Ginger Glow, Golden Tamarind, Ruby Blow, and Tropical Blue.",
+        "Explore four HERBAROSA herbal infusion varieties inspired by Indonesian botanicals: Ginger Glow, Golden Tamarind, Ruby Blow, and Tropical Blue.",
     },
     {
       icon: ClipboardCheck,
       title: "Product Information",
       description:
-        "Clear product details help buyers review ingredients, packaging, specifications, and suitability for their markets.",
+        "We provide product information to help buyers review ingredients, packaging, product specifications, and market requirements.",
     },
     {
       icon: Globe2,
-      title: "Export Partnership",
+      title: "Global Business Opportunities",
       description:
-        "We welcome inquiries from international buyers, importers, and distributors interested in exploring business opportunities.",
+        "HERBAROSA welcomes inquiries from international buyers, importers, distributors, and potential business partners.",
     },
   ];
 
@@ -44,7 +44,7 @@ export default function Why() {
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm font-semibold uppercase tracking-widest text-[#A82D3B]">
-            Why Choose Herbal Rosa
+            Why Choose HERBAROSA
           </p>
 
           <h2 className="mt-3 font-display text-4xl font-bold text-[#173D2D] sm:text-5xl">
@@ -52,8 +52,9 @@ export default function Why() {
           </h2>
 
           <p className="mt-5 leading-relaxed text-[#5D665D]">
-            Explore our herbal product range and connect with us to discuss
-            potential business and export opportunities.
+            Discover our Indonesian herbal infusion collection
+            and explore opportunities for international distribution
+            and business collaboration.
           </p>
         </div>
 
@@ -84,13 +85,13 @@ export default function Why() {
 
         <div className="mt-10 text-center">
           <a
-  href="https://wa.me/6289521220642?text=Hello%20Herbal%20Rosa%20Team%2C%20I%20am%20interested%20in%20your%20herbal%20products%20for%20potential%20business%20cooperation.%20Could%20you%20please%20share%20your%20product%20catalog%2C%20pricing%2C%20MOQ%2C%20and%20export%20information%3F"
-  target="_blank"
-  rel="noreferrer"
-  className="inline-flex items-center justify-center rounded-full bg-[#1D632F] px-7 py-3.5 font-semibold text-white transition-colors hover:bg-[#174D26]"
->
-  Discuss Export Partnership
-</a>
+            href="https://wa.me/6289521220642?text=Hello%20HERBAROSA%20Team%2C%20I%20am%20interested%20in%20your%20herbal%20products%20for%20potential%20business%20cooperation.%20Could%20you%20please%20share%20your%20product%20catalog%2C%20pricing%2C%20MOQ%2C%20and%20export%20information%3F"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-full bg-[#1D632F] px-7 py-3.5 font-semibold text-white transition-colors hover:bg-[#174D26]"
+          >
+            Discuss Export Partnership
+          </a>
         </div>
       </div>
     </section>

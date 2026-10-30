@@ -6,34 +6,34 @@ import { ChevronDown } from "lucide-react";
 
 const questions = [
   {
-    question: "What is Herbal Rosa?",
+    question: "What is HERBAROSA?",
     answer:
-      "Herbal Rosa is a brand featuring products inspired by Indonesian botanicals. Our collection introduces distinctive varieties inspired by local herbal traditions.",
+      "HERBAROSA is an Indonesian herbal infusion brand inspired by the country's rich botanical heritage. Our collection features distinctive varieties inspired by Indonesian herbal traditions.",
   },
   {
-    question: "What products does Herbal Rosa offer?",
+    question: "What products does HERBAROSA offer?",
     answer:
-      "Our collection includes Ginger Glow, Golden Tamarind, Ruby Blow, and Tropical Blue. Contact our team for more information about product ingredients, packaging, and specifications.",
+      "Our collection includes four signature varieties: Ginger Glow, Golden Tamarind, Ruby Blow, and Tropical Blue. Contact our team for product ingredients, packaging details, and specifications.",
   },
   {
-    question: "Can I request product information?",
+    question: "Can I request a product catalog?",
     answer:
-      "Yes. You can contact our team to ask about product details, ingredients, packaging options, and other specifications relevant to your needs.",
+      "Yes. Prospective buyers and business partners can contact our team to request product information, catalog details, ingredients, packaging options, and available specifications.",
   },
   {
-    question: "Do you accept bulk orders?",
+    question: "Do you accept bulk and wholesale inquiries?",
     answer:
-      "We welcome inquiries about bulk orders and potential business cooperation. Please contact our team to discuss your requirements, order quantities, and available options.",
+      "We welcome inquiries about bulk purchases and wholesale opportunities. Please contact our team to discuss your required quantities, product selection, and potential business arrangements.",
   },
   {
-    question: "Can international buyers work with Herbal Rosa?",
+    question: "Can international buyers become HERBAROSA distributors?",
     answer:
-      "We welcome inquiries from international buyers, importers, and distributors. Contact us to discuss your target market and explore potential export opportunities.",
+      "We welcome inquiries from international importers, distributors, wholesalers, and potential business partners. Contact us to discuss your target market and explore possible distribution and export opportunities.",
   },
   {
-    question: "How can I contact Herbal Rosa?",
+    question: "How can I contact HERBAROSA?",
     answer:
-      "You can contact our team through the WhatsApp link provided on our website. We look forward to hearing about your product inquiries and business interests.",
+      "You can reach our team through the business contact details and WhatsApp link provided on this website. We look forward to discussing your product inquiries and potential business cooperation.",
   },
 ];
 
@@ -56,8 +56,9 @@ export default function FAQ() {
           </h2>
 
           <p className="mt-5 text-base leading-7 text-[#526456]">
-            Find answers to common questions about our products
-            and potential business opportunities.
+            Find answers to common questions about HERBAROSA
+            products, wholesale inquiries, and international
+            business opportunities.
           </p>
         </div>
 
