@@ -1,98 +1,114 @@
+
 "use client";
 
+import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
+const questions = [
+  {
+    question: "What is HERBAROSA?",
+    answer:
+      "HERBAROSA is an Indonesian herbal infusion brand inspired by the country's rich botanical heritage. Our collection features distinctive varieties inspired by Indonesian herbal traditions.",
+  },
+  {
+    question: "What products does HERBAROSA offer?",
+    answer:
+      "Our collection includes four signature varieties: Ginger Glow, Golden Tamarind, Ruby Blow, and Tropical Blue. Contact our team for product ingredients, packaging details, and specifications.",
+  },
+  {
+    question: "Can I request a product catalog?",
+    answer:
+      "Yes. Prospective buyers and business partners can contact our team to request product information, catalog details, ingredients, packaging options, and available specifications.",
+  },
+  {
+    question: "Do you accept bulk and wholesale inquiries?",
+    answer:
+      "We welcome inquiries about bulk purchases and wholesale opportunities. Please contact our team to discuss your required quantities, product selection, and potential business arrangements.",
+  },
+  {
+    question: "Can international buyers become HERBAROSA distributors?",
+    answer:
+      "We welcome inquiries from international importers, distributors, wholesalers, and potential business partners. Contact us to discuss your target market and explore possible distribution and export opportunities.",
+  },
+  {
+    question: "How can I contact HERBAROSA?",
+    answer:
+      "You can reach our team through the business contact details and WhatsApp link provided on this website. We look forward to discussing your product inquiries and potential business cooperation.",
+  },
+];
+
 export default function FAQ() {
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+
   return (
-    <section id="faq" className="py-24 bg-secondary/40">
+    <section
+      id="faq"
+      className="bg-[#FBF7ED] py-20 sm:py-24"
+    >
       <div className="mx-auto max-w-3xl px-5 sm:px-8">
         <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-accent">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#A82D3B]">
             FAQ
           </p>
-          <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold">
-            Pertanyaan umum.
+
+          <h2 className="mt-4 font-display text-3xl font-bold text-[#173D2D] sm:text-5xl">
+            Frequently Asked Questions
           </h2>
+
+          <p className="mt-5 text-base leading-7 text-[#526456]">
+            Find answers to common questions about HERBAROSA
+            products, wholesale inquiries, and international
+            business opportunities.
+          </p>
         </div>
+
         <div className="mt-12 space-y-3">
-          <div className="faq rounded-2xl bg-card border border-border/40 overflow-hidden">
-            <input type="checkbox" id="faq1" defaultChecked />
-            <label
-              htmlFor="faq1"
-              className="w-full flex items-center justify-between gap-4 p-5 text-left font-semibold cursor-pointer"
-            >
-              <span>Apakah produk menggunakan bahan pengawet?</span>
-              <ChevronDown className="chev w-5 h-5 text-primary transition-transform"></ChevronDown>
-            </label>
-            <div className="answer text-sm text-muted-foreground">
-              Tidak. Semua produk dibuat dari bahan alami seperti bunga telang,
-              bunga rosella yang dipadukan dengan berbagai rempah pilihan dan
-              menggunakan gula singkong sebagai pemanis alami yang rendah
-              kalori. <br /> <br />
-              Hadir dari racikan asli dan diberi nama sesuai dengan kesan
-              per-tama yang sering ter-lontar dari konsumen saat meminumnya,
-              {"sesegar itu"}. Frasa tersebut menggambarkan betapa segarnya rasa
-              yang didapatkan saat meneguk minuman ini.
-            </div>
-          </div>
-          <div className="faq rounded-2xl bg-card border border-border/40 overflow-hidden">
-            <input type="checkbox" id="faq2" />
-            <label
-              htmlFor="faq2"
-              className="w-full flex items-center justify-between gap-4 p-5 text-left font-semibold cursor-pointer"
-            >
-              <span>Apakah menggunakan pemanis buatan?</span>
-              <ChevronDown className="chev w-5 h-5 text-primary transition-transform"></ChevronDown>
-            </label>
-            <div className="answer text-sm text-muted-foreground">
-              Gula singkong sebagai pemanis alami yang kami gunakan memiliki
-              indeks glikemik lebih rendah dari pada gula tebu, sehingga aman
-              untuk penderita diabetes ringan.
-              <br /> <br />
-              Sesuai dengan namanya, gula ini terbuat dari pati singkong yang
-              memiliki tingkat kemanisan 2.5x lebih manis dibandingkan gula tebu
-              dengan takaran yang lebih rendah. <br /> <br />
-              Keunggulan lainnya dibandingkan gula tebu adalah gula singkong
-              tidak mengandung pengawet, bebas gluten, rendah glukosa, dan
-              rendah kalori. Sehingga pemanis alami gula singkong sangat aman
-              untuk dikonsum-si oleh semua kalangan.
-            </div>
-          </div>
-          <div className="faq rounded-2xl bg-card border border-border/40 overflow-hidden">
-            <input type="checkbox" id="faq3" />
-            <label
-              htmlFor="faq3"
-              className="w-full flex items-center justify-between gap-4 p-5 text-left font-semibold cursor-pointer"
-            >
-              <span>Apakah tersedia pengiriman ke luar kota?</span>
-              <ChevronDown className="chev w-5 h-5 text-primary transition-transform"></ChevronDown>
-            </label>
-            <div className="answer text-sm text-muted-foreground">
-              Ya. Tersedia pengiriman ke luar kota dengan platform E-Commerce
-              seperti Shopee & Tokopedia
-            </div>
-          </div>
-          <div className="faq rounded-2xl bg-card border border-border/40 overflow-hidden">
-            <input type="checkbox" id="faq4" />
-            <label
-              htmlFor="faq4"
-              className="w-full flex items-center justify-between gap-4 p-5 text-left font-semibold cursor-pointer"
-            >
-              <span>Bagaimana cara memesan dalam jumlah besar?</span>
-              <ChevronDown className="chev w-5 h-5 text-primary transition-transform"></ChevronDown>
-            </label>
-            <div className="answer text-sm text-muted-foreground">
-              Bisa hubungi kami via{" "}
-              <a
-                href="https://wa.me/6289521220642"
-                target="_blank"
-                className="underline font-semibold"
+          {questions.map((item, index) => {
+            const isOpen = openIndex === index;
+
+            return (
+              <div
+                key={item.question}
+                className="overflow-hidden rounded-2xl border border-[#E8E0CF] bg-white transition-shadow hover:shadow-md"
               >
-                WhatsApp
-              </a>{" "}
-              untuk kerjasama bisnis dan keagenan.
-            </div>
-          </div>
+                <button
+                  type="button"
+                  onClick={() =>
+                    setOpenIndex(isOpen ? null : index)
+                  }
+                  aria-expanded={isOpen}
+                  className="flex w-full items-center justify-between gap-4 p-5 text-left font-semibold text-[#173D2D] sm:p-6"
+                >
+                  <span>{item.question}</span>
+
+                  <ChevronDown
+                    className={`h-5 w-5 shrink-0 text-[#A82D3B] transition-transform duration-300 ${
+                      isOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+
+                {isOpen && (
+                  <div className="px-5 pb-6 text-sm leading-7 text-[#526456] sm:px-6">
+                    {item.answer}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+
+        <div className="mt-10 text-center">
+          <p className="text-sm text-[#526456]">
+            Have another question?
+          </p>
+
+          <a
+            href="#kontak"
+            className="mt-3 inline-flex items-center justify-center rounded-full bg-[#1D632F] px-7 py-3.5 font-semibold text-white transition-colors hover:bg-[#174D26]"
+          >
+            Contact Our Team
+          </a>
         </div>
       </div>
     </section>

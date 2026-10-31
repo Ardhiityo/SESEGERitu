@@ -1,175 +1,101 @@
+
 "use client";
 
-import Link from "next/link";
-import { Leaf, Menu } from "lucide-react";
-import { useState, useEffect } from "react";
 import Image from "next/image";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
+
+const navLinks = [
+  { label: "Home", href: "#hero" },
+  { label: "About", href: "#about" },
+  { label: "Products", href: "#products" },
+  { label: "Why HERBAROSA", href: "#why" },
+  { label: "FAQ", href: "#faq" },
+  { label: "Contact", href: "#kontak" },
+];
 
 export default function Navbar() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all ${
-        isScrolled
-          ? "bg-background/85 backdrop-blur-lg shadow-card"
-          : "bg-transparent"
-      }`}
-    >
-      <nav className="mx-auto max-w-7xl px-5 sm:px-8 h-16 md:h-20 flex items-center justify-between">
-        <Link
-          href="#"
-          className="flex items-center gap-2 font-display text-xl font-bold text-primary"
+    <header className="sticky top-0 z-50 w-full border-b border-[#e5eadf] bg-white/95 shadow-sm backdrop-blur-md">
+      <nav className="mx-auto flex min-h-[76px] max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+        {/* LOGO HR DAN NAMA BRAND */}
+        <a
+          href="#hero"
+          className="flex shrink-0 items-center gap-3"
+          aria-label="HERBAROSA home"
+          onClick={() => setMenuOpen(false)}
         >
-          <span className="grid place-items-center w-9 h-9 rounded-full bg-primary text-primary-foreground">
-            <Leaf className="w-5 h-5"></Leaf>
-          </span>
           <Image
-            src="/assets/brand.webp"
-            width={400}
-            height={400}
-            alt="brands"
-            className="w-[200px] h-[40px]"
-          />
-        </Link>
-        <ul className="hidden md:flex items-center gap-8 text-sm font-medium">
-          <li>
-            <Link
-              href="#hero"
-              className="text-foreground/80 hover:text-primary transition-colors"
-            >
-              Beranda
-            </Link>
-          </li>
-          <li>
+  src="/assets/herbal-rosa-emblem.png"
+  alt="HERBAROSA HR emblem"
+  width={52}
+  height={52}
+  priority
+  className="h-10 w-10 object-contain sm:h-12 sm:w-12"
+/>
+
+          <span className="font-serif text-2xl font-bold tracking-tight text-[#173d2b] sm:text-3xl">
+            HERBAROSA
+          </span>
+        </a>
+
+        {/* MENU DESKTOP */}
+        <div className="hidden items-center gap-6 lg:flex">
+          {navLinks.map((link) => (
             <a
-              href="#about"
-              className="text-foreground/80 hover:text-primary transition-colors"
+              key={link.href}
+              href={link.href}
+              className="whitespace-nowrap text-sm font-medium text-gray-700 transition-colors hover:text-[#39734b]"
             >
-              Tentang
+              {link.label}
             </a>
-          </li>
-          <li>
-            <Link
-              href="#products"
-              className="text-foreground/80 hover:text-primary transition-colors"
-            >
-              Produk
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#order"
-              className="text-foreground/80 hover:text-primary transition-colors"
-            >
-              Pesan
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#faq"
-              className="text-foreground/80 hover:text-primary transition-colors"
-            >
-              FAQ
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#contact"
-              className="text-foreground/80 hover:text-primary transition-colors"
-            >
-              Kontak
-            </Link>
-          </li>
-        </ul>
-        <Link
-          href="#order"
-          className="hidden md:inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-5 py-2.5 text-sm font-semibold hover:bg-primary-glow transition-colors shadow-soft"
-        >
-          Pesan Sekarang
-        </Link>
+          ))}
+
+          <a
+            href="#products"
+            className="whitespace-nowrap rounded-full bg-[#245638] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#173d2b]"
+          >
+            Explore Products
+          </a>
+        </div>
+
+        {/* TOMBOL MENU HP */}
         <button
-          className="md:hidden text-foreground"
-          aria-label="menu"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          type="button"
+          className="flex h-10 w-10 items-center justify-center rounded-lg text-[#173d2b] transition hover:bg-[#f0f5ed] lg:hidden"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={menuOpen}
         >
-          <Menu></Menu>
+          {menuOpen ? <X size={26} /> : <Menu size={26} />}
         </button>
       </nav>
-      {isMobileMenuOpen && (
-        <div className="md:hidden bg-background border-t border-border">
-          <ul className="flex flex-col px-5 py-4 gap-3">
-            <li>
-              <Link
-                href="#hero"
-                className="block py-2 text-foreground/80"
-                onClick={() => setIsMobileMenuOpen(false)}
+
+      {/* MENU MOBILE */}
+      {menuOpen && (
+        <div className="border-t border-[#e5eadf] bg-white px-4 pb-5 pt-3 shadow-md lg:hidden">
+          <div className="mx-auto flex max-w-7xl flex-col gap-1">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={() => setMenuOpen(false)}
+                className="rounded-lg px-4 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-[#f0f5ed] hover:text-[#245638]"
               >
-                Beranda
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#about"
-                className="block py-2 text-foreground/80"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Tentang
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#products"
-                className="block py-2 text-foreground/80"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Produk
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#order"
-                className="block py-2 text-foreground/80"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Pesan
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#faq"
-                className="block py-2 text-foreground/80"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                FAQ
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#contact"
-                className="block py-2 text-foreground/80"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Kontak
-              </Link>
-            </li>
-            <Link
-              href="#order"
-              className="mt-2 inline-flex items-center justify-center rounded-full bg-primary text-primary-foreground px-5 py-2.5 text-sm font-semibold"
-              onClick={() => setIsMobileMenuOpen(false)}
+                {link.label}
+              </a>
+            ))}
+
+            <a
+              href="#products"
+              onClick={() => setMenuOpen(false)}
+              className="mt-2 rounded-full bg-[#245638] px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-[#173d2b]"
             >
-              Pesan Sekarang
-            </Link>
-          </ul>
+              Explore Products
+            </a>
+          </div>
         </div>
       )}
     </header>

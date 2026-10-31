@@ -1,150 +1,124 @@
+
 "use client";
 
-import Image from "next/image";
+import { MessageCircle } from "lucide-react";
 
-import { HeartPulse, MessageCircle } from "lucide-react";
+const products = [
+  {
+    name: "Ginger Glow",
+    image: "/assets/ginger glow.webp",
+    description:
+      "A warming herbal infusion featuring ginger and selected spices, inspired by Indonesia's rich botanical traditions.",
+    color: "bg-[#E8EBDD]",
+  },
+  {
+    name: "Golden Tamarind",
+    image: "/assets/golden tamarind.webp",
+    description:
+      "A distinctive herbal infusion combining tamarind and selected spices for a memorable Indonesian-inspired flavor.",
+    color: "bg-[#F5E7C5]",
+  },
+  {
+    name: "Ruby Blow",
+    image: "/assets/ruby blow.webp",
+    description:
+      "A botanical-inspired infusion featuring hibiscus, red ginger, and lemongrass with a vibrant ruby-red character.",
+    color: "bg-[#F1DEDC]",
+  },
+  {
+    name: "Tropical Blue",
+    image: "/assets/tropical blue.webp",
+    description:
+      "A unique herbal infusion inspired by tropical botanicals, featuring butterfly pea, ginger, and lemongrass.",
+    color: "bg-[#DDE8F4]",
+  },
+];
 
-export default function Product() {
-  const products = [
-    {
-      image: "/assets/hibiscus.webp",
-      title: "Hibiscus",
-      description: "Ekstrak Bunga Rosela & Serai.",
-      benefit: "Meningkatkan Fungsi Jantung",
-      price: "15.000",
-    },
-    {
-      image: "/assets/summer-time.webp",
-      title: "Summer Time",
-      description: "Ekstrak Lemon Serai Selasih.",
-      benefit: "Membantu Relaksasi",
-      price: "15.000",
-    },
-    {
-      image: "/assets/tropical-purple.webp",
-      title: "Tropical Purple",
-      description: "Ekstrak Telang Lemon Serai.",
-      benefit: "Meningkatkan Kekebalan Tubuh",
-      price: "15.000",
-    },
-    {
-      image: "/assets/tropical-blue.webp",
-      title: "Tropical Blue",
-      description: "Ekstrak Telang Jahe Serai.",
-      benefit: "Antioksidan",
-      price: "15.000",
-    },
-    {
-      image: "/assets/tropical-sunset.webp",
-      title: "Tropical Sunset",
-      description: "Ekstrak Lemon Wortel Chia Seed.",
-      benefit: "Menambah Serat & Omega-3",
-      price: "15.000",
-    },
-    {
-      image: "/assets/sweet-tamarind.webp",
-      title: "Sweet Tamarind",
-      description: "Ekstrak Asam Jawa & Gula Aren Murni.",
-      benefit: "Memperlancar Pencernaan",
-      price: "15.000",
-    },
-    {
-      image: "/assets/coconut.webp",
-      title: "Coconut Water",
-      description: "Air Kelapa Murni 100% Tanpa Pemanis Tambahan.",
-      benefit: "Mengembalikan Ion yang hilang",
-      price: "15.000",
-    },
-    {
-      image: "/assets/matchalatte.webp",
-      title: "Seggerlatte Matchalatte",
-      description: "Perpaduan Daun Teh Hijau & Gula Singkong.",
-      benefit: "Meningkatkan Moodbooster",
-      price: "15.000",
-    },
-    {
-      image: "/assets/chocolatte.webp",
-      title: "Seggerlatte Choco Latte",
-      description: "Perpaduan Dark Chocolate & Gula Singkong.",
-      benefit: "Meningkatkan Moodbooster",
-      price: "15.000",
-    },
-    {
-      image: "/assets/coffee-latte.webp",
-      title: "Seggerlatte Coffee Latte",
-      description: "Perpaduan Kopi & Gula Singkong.",
-      benefit: "Meningkatkan Moodbooster",
-      price: "15.000",
-    },
-    {
-      image: "/assets/blue-latte.webp",
-      title: "Seggerlatte Blue Latte",
-      description: "Perpaduan Bunga Telang & Gula Singkong.",
-      benefit: "Meningkatkan Moodbooster",
-      price: "15.000",
-    },
-  ];
+export default function Products() {
+  const whatsappNumber = "6289521220642";
 
   return (
-    <section id="products" className="py-24">
-      <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <div className="flex flex-wrap items-end justify-between gap-6">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-widest text-accent">
-              Produk Kami
+    <section
+      id="products"
+      className="bg-[#FBF7ED] px-5 py-20 md:px-10 lg:px-16"
+    >
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div className="max-w-2xl">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#A82D3B]">
+              Discover HERBAROSA
             </p>
-            <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold">
-              Pilih produk favoritmu.
+
+            <h2 className="text-4xl font-bold leading-tight text-[#173D2D] md:text-5xl">
+              Explore Our Four Signature Blends
             </h2>
           </div>
-          <p className="text-muted-foreground max-w-md">
-            Diracik dari rempah segar pilihan dan pemanis alami yang rendah
-            kalori
+
+          <p className="max-w-md text-base leading-7 text-[#5F665D]">
+            Discover distinctive herbal infusions inspired by
+            Indonesia&apos;s botanical traditions and crafted
+            for a memorable beverage experience.
           </p>
         </div>
-        <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {products.map((product, index) => (
+
+        <div className="grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-4">
+          {products.map((product) => (
             <article
-              className="group rounded-3xl bg-card border border-border/40 overflow-hidden hover:shadow-soft hover:-translate-y-2 transition-all duration-300"
-              key={index}
+              key={product.name}
+              className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#E9E3D6] bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
-              <div className="aspect-square overflow-hidden bg-muted">
-                <Image
+              <div
+                className={`flex h-64 items-center justify-center overflow-hidden ${product.color}`}
+              >
+                <img
                   src={product.image}
-                  alt="Kunyit Asam Madu"
-                  loading="lazy"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  width={400}
-                  height={400}
+                  alt={`${product.name} HERBAROSA herbal infusion packaging`}
+                  className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="font-display text-xl font-semibold">
-                  {product.title}
+
+              <div className="flex flex-1 flex-col p-6">
+                <h3 className="mb-3 text-xl font-bold text-[#173D2D]">
+                  {product.name}
                 </h3>
-                <p className="mt-2 text-sm text-muted-foreground line-clamp-2">
+
+                <p className="mb-6 flex-1 text-sm leading-6 text-[#62675F]">
                   {product.description}
                 </p>
-                <div className="mt-3 inline-flex items-center gap-1.5 text-xs font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
-                  <HeartPulse className="w-3 h-3"></HeartPulse>
-                  {product.benefit}
-                </div>
-                <div className="mt-5 flex items-center justify-between">
-                  <span className="font-display text-2xl font-bold">
-                    Rp {product.price}
-                  </span>
-                  <a
-                    href={`https://wa.me/6289521220642?text=${encodeURI(`Hallo SESEGERitu, saya dari web SESEGERitu ingin pesan ${product.title}`)}`}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-1.5 rounded-full bg-primary text-primary-foreground px-4 py-2 text-sm font-semibold hover:bg-primary-glow transition-colors"
-                  >
-                    <MessageCircle className="w-4 h-4"></MessageCircle> Pesan
-                  </a>
-                </div>
+
+                <a
+                  href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+                    `Hello HERBAROSA Team, I would like to learn more about ${product.name}, including product specifications, pricing, and bulk order options.`
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex w-fit items-center justify-center gap-2 rounded-full bg-[#1D632F] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#173D2D]"
+                >
+                  <MessageCircle size={17} />
+                  Inquire About Product
+                </a>
               </div>
             </article>
           ))}
+        </div>
+
+        <div className="mt-12 rounded-2xl bg-[#173D2D] px-6 py-8 text-center md:px-10">
+          <h3 className="mb-3 text-2xl font-bold text-[#FBF7ED]">
+            Interested in HERBAROSA Products?
+          </h3>
+
+          <p className="mx-auto mb-6 max-w-2xl leading-7 text-[#E5E9DE]">
+            Contact our team to request product information,
+            discuss bulk orders, or explore potential
+            international distribution and export partnerships.
+          </p>
+
+          <a
+            href="#kontak"
+            className="inline-flex items-center justify-center rounded-full bg-[#FBF7ED] px-6 py-3 font-semibold text-[#173D2D] transition hover:bg-white"
+          >
+            Contact Our Team
+          </a>
         </div>
       </div>
     </section>
